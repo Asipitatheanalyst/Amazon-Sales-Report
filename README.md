@@ -70,6 +70,10 @@ The dataset used in this project has been uploaded to this GitHub repository for
 - Removed full duplicates and tagged partial ones
 - Cleaned and grouped the `status` column into `order_status_grouped`
 - Dropped the irrelevant columns
+- Cleaned the order city and state in Excel power query (remove unneccesary characters and numbers)
+  ```
+  Text.Proper(Text.Select([ship_state], {"A".."Z", "a".."z", " "}))
+  ```
 
 ---
 
