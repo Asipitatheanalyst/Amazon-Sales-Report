@@ -145,3 +145,49 @@ ORDER BY year, month;
 ### 11. Most active days of the week
 ### 12. Revenue by category and region
 ### 13. Are there products consistently out of stock or returned?
+
+---
+## Findings
+- ✅ **Monthly Sales Trends**: Sales peaked in **April (₹28.8M)**, followed by **May (₹26.2M)** and **June (₹23.4M)**, revealing a clear seasonal trend.
+- ✅ **Top Revenue-Generating Category**: The **“Set”** category dominated with over **₹39.2M** in total revenue.
+- ✅ **Top Performing Cities**: 
+  - **Bengaluru (11,898 orders)**  
+  - **Hyderabad (9,125)**  
+  - **Mumbai (7,122)**  
+  These cities had the highest order volumes and could benefit from focused logistics or marketing.
+- ✅ **Shipping Mode Preference**: 
+  - **Expedited** shipping was used in **88,615** orders  
+  - vs **Standard** with **40,360** orders  
+  This shows customers heavily prefer faster delivery.
+- ✅ **Average Selling Price by Category**: 
+  - **Set**: ₹779.65  
+  - **Saree**: ₹755.69  
+  - **Western Dress**: ₹723.62  
+  These categories command premium pricing.
+- ✅ **Order Status Breakdown**:  
+  - **Shipped**: 107,581  
+  - **Cancelled**: 18,332  
+  - **Returned**: 2,109  
+  Indicates a strong order fulfillment rate.
+- ✅ **Top 10 Customers by Spend**:  
+  The highest-spending customer spent **₹6,680**, and many others spent over **₹6,000+**, showing opportunities for loyalty programs.
+- ✅ **Units Sold Over Time**:  
+  Categories like **Set** and **Kurta** consistently led in monthly unit sales, especially during Q2.
+- ✅ **Most Returned Categories**:  
+  - **Set**: 845 returns  
+  - **Kurta**: 752 returns  
+  These may indicate sizing, quality, or listing issues.
+- ✅ **Refund Rate by Category**:
+  - **Western Dress**: 2.21%  
+  - **Set**: 1.66%  
+  - **Kurta**: 1.50%  
+  Shows which categories are driving post-sale losses.
+- ✅ **Quantity vs. Average Sale Amount**:  
+  Highest average amounts seen at **quantities of 6 (₹3835)** and **7 (₹5584)** — possibly large set or bulk orders.
+- ✅ **Revenue by Region**:  
+  - **Maharashtra**, **Karnataka**, and **Telangana** are leading revenue contributors for `Set` and `Kurta` categories.
+- ✅ **Most Active Weekdays**:  
+  - **Sunday** had the highest order volume, followed by **Tuesday** and **Wednesday** — useful for campaign timing.
+
+> These findings highlight actionable areas for improving fulfillment, marketing strategies, customer segmentation, and overall profitability.
+
