@@ -93,20 +93,22 @@ Created the following additional columns:
 ### 1. Total Sales Generated Per Month Across All Products
 
 ```sql
-SELECT EXTRACT(YEAR FROM order_date) AS year,
-       EXTRACT(MONTH FROM order_date) AS month,
-       SUM(amount) AS total_sales
+SELECT 
+    TO_CHAR(order_date, 'FMMonth') AS month,
+    '₹' || TO_CHAR(ROUND(SUM(amount)), 'FM999,999,999') AS total_sales
 FROM amazon_sales
-GROUP BY year, month
-ORDER BY year, month;
+GROUP BY month
+ORDER BY month;
 ```
 ###  2. Highest Revenue Product Line or Product Name
 
 ```sql
-SELECT category, SUM(amount) AS total_revenue
+SELECT 
+    category,
+   '₹' || TO_CHAR(ROUND(SUM(amount)), 'FM999,999,999') AS total_revenue
 FROM amazon_sales
 GROUP BY category
-ORDER BY total_revenue DESC
+ORDER BY sum(amount) DESC
 LIMIT 1;
 ```
 ### 3. Cities With Highest Number of Orders
@@ -116,14 +118,17 @@ SELECT ship_city, COUNT(*) AS total_orders
 FROM amazon_sales
 GROUP BY ship_city
 ORDER BY total_orders DESC
-LIMIT 10;
+LIMIT 5;
 ```
 ### 4.Average Selling Price per Product Category
 
 ```sql
-SELECT category, ROUND(AVG(amount), 2) AS avg_price
+SELECT 
+    category,
+    '₹' || ROUND(AVG(amount)) AS avg_selling_price
 FROM amazon_sales
-GROUP BY category;
+GROUP BY category
+ORDER BY ROUND(AVG(amount)) DESC;
 ```
 ### 5. Units Sold Per Product Type Over Time
 
