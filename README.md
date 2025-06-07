@@ -10,8 +10,9 @@
 5. [Derived Columns](#derived-columns)   
 6. [Business Insights](#business-insights)
 7. [Findings](#findings)
-8. [Power BI Dashboard](#power-bi-dashboard)  
-9. [Conclusion](#conclusion)
+8. [Power BI Dashboard](#power-bi-dashboard)
+9. [Recommedations](#recommedations)
+10. [Conclusion](#conclusion)
 
 ---
 
@@ -195,4 +196,32 @@ ORDER BY year, month;
   - **Sunday** had the highest order volume, followed by **Tuesday** and **Wednesday** — useful for campaign timing.
 
 > These findings highlight actionable areas for improving fulfillment, marketing strategies, customer segmentation, and overall profitability.
+
+##  Power BI Dashboard
+![Amazon Dashboard](https://github.com/user-attachments/assets/15c26f4e-6da2-4e41-a597-e328cef98ef7)
+
+![Amazon Dashboard 2](https://github.com/user-attachments/assets/ef9578a5-41ea-47ae-9c2b-a9daa33a1476)
+
+> The dashboard provides a comprehensive overview of Amazon's sales performance through clean, interactive visuals. It highlights key metrics such as total sales, total orders, top categories, and most active cities. Trends like daily sales patterns, monthly revenue, shipping preferences, and return rates are clearly presented using line charts, bar graphs, and donut charts. With intuitive slicers for month and year filtering, users can quickly explore patterns and draw insights. The design is visually appealing, branded with a custom layout, and effectively communicates both high-level summaries and detailed category-level performance for informed decision-making.
+
+##  Recommedations
+> Based on the insights from the data:
+1. **Focus on High-Performing Categories:** The "Set" category leads in both revenue and return rates. While it performs well, further analysis into return reasons may help improve margins.
+2. **Improve Return Process:** Categories like Kurta and Western Dress also see significant return volumes. Review sizing, description accuracy, or supplier quality.
+3. **Optimize Courier Usage:** Over 84% of orders are shipped, with few canceled. Ensuring continued efficiency in shipping will support satisfaction.
+4. **Active Days:** Ensure to schedule promotions on Sundays and Tuesdays.
+
+##  Conclusion
+This project analyzed Amazon's sales data using PostgreSQL for cleaning and transformation, and Power BI for visualization. From identifying top-selling categories and high-return products to analyzing shipping methods and city-level order trends, the dashboard provides actionable business intelligence. With better return handling, targeted shipping strategies, and city-focused marketing, Amazon could potentially:
+
+- Improve customer satisfaction,
+- Reduce logistics costs, and
+- Increase sales by 10–20% in high-opportunity segments.
+
+The clean dataset and SQL views are uploaded in this repository.
+
+
+
+
+
 
